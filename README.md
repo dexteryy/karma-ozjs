@@ -41,6 +41,7 @@ module.exports = function(config) {
 
 ```js
 require.config({
+    // Karma serves files from '/base'
     baseUrl: 'base/js/vendor/',
     aliases: {
         'appname': '../appname/'
@@ -53,7 +54,7 @@ require([
 ], function($, app){
 
     describe('app.wrapper', function(){
-        it('sould be instanceof $', function(){
+        it('sould be an Dollar object', function(){
             expect(app.wrapper).to.be.an.instanceof($);
         });
     });
