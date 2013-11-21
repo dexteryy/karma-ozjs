@@ -1,6 +1,6 @@
 {
   "name": "karma-ozjs",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A Karma plugin. Adapter for OzJS framework",
   "main": "lib/index.js",
   "repository": {
@@ -17,11 +17,10 @@
     "email": "dexter.yy@gmail.com",
     "url": "http://github.com/dexteryy"
   },
-  "dependencies": {
-      "ozjs": "~2.5.5"
-  },
+  "dependencies": {},
   "devDependencies": {},
   "peerDependencies": {
+    "ozjs": ">=2.5.5",
     "karma": ">=0.9"
   },
   "license": "MIT"
