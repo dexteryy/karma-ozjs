@@ -9,17 +9,25 @@ title: karma-ozjs
 
 ## Installation
 
-Install the plugin from npm:
+The easiest way is to keep `karma-ozjs` as a devDependency in your `package.json`.
+```json
+{
+  "devDependencies": {
+    "karma": "~0.10",
+    "karma-ozjs": "~0.1"
+  }
+}
+```
 
-```sh
+You can simple do it by:
+```bash
 npm install karma-ozjs --save-dev
 ```
 
 ## Configuring Karma
 
-`./karma.conf.js`:
-
 ```js
+// karma.conf.js
 module.exports = function(config) {
     config.set({
         // frameworks to use
@@ -28,18 +36,16 @@ module.exports = function(config) {
         files: [
             { pattern: 'js/vendor/**/*.js', included: false },
             { pattern: 'js/appname/**/*.js', included: false },
+            "test/config.js"
             "test/tests.js"
         ],
         // ...
-    });
-};
 ```
 
 ## Configuring oz.js
 
-`./test/tests.js`
-
 ```js
+// test/config.js
 require.config({
     // Karma serves files from '/base'
     baseUrl: 'base/js/vendor/',
@@ -47,7 +53,10 @@ require.config({
         'appname': '../appname/'
     }
 });
+```
 
+```js
+// test/tests.js
 require([
     'dollar'
     'appname/app'
