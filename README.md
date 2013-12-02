@@ -14,7 +14,7 @@ The easiest way is to keep `karma-ozjs` as a devDependency in your `package.json
 {
   "devDependencies": {
     "karma": "~0.10",
-    "karma-ozjs": "~0.3"
+    "karma-ozjs": "~0.4.0"
   }
 }
 ```

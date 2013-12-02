@@ -1,6 +1,6 @@
 {
   "name": "karma-ozjs",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "description": "A Karma plugin. Adapter for OzJS framework",
   "main": "lib/index.js",
   "repository": {
